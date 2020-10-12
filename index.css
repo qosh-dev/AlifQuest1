@@ -1,0 +1,45 @@
+
+#calc{
+    width: 320px; 
+    height: 450px; 
+    display: flex; 
+    flex-direction: column; 
+    transform: translate( -50%, 0); 
+    margin: auto 50%; 
+    border: 1px solid black; 
+    border-radius: 4px; 
+    padding: 10px
+}
+    #title{
+        align-self: flex-end;
+    }
+    #answer{
+        width: 280px; 
+        height: 45px;
+        border: 1px solid black; 
+        border-radius: 4px; 
+        padding: 10px; 
+        float: right; 
+        margin: auto 50%;
+        transform: translate( -50%, 0); 
+
+        /* margin-right: 15% */
+    }
+    #btns{
+        display: flex;
+        width: 280px;
+        margin-left: 10px;
+    }
+        #numbers{
+            display: flex;  
+            flex-direction: column; 
+        }
+            .btn{
+                margin: 5px;
+                width: 57.5px;
+                height: 65px;
+            }
+            #methods{
+                display:flex;
+                flex-direction: column;
+            }
