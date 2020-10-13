@@ -43,3 +43,6 @@
                 display:flex;
                 flex-direction: column;
             }
+                .oper{
+                    height: 46px;
+                }
