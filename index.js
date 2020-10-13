@@ -50,7 +50,6 @@ function calc(){
                 result = Eval(result);
                 answer.innerHTML = result;
             }
-            console.log(result);
         })
     }
 }
