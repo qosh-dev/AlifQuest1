@@ -4,15 +4,15 @@ function Eval(exp) {
     var result = 0;
     var method = {
         "/": function (Arr) {
-            var result = 1;
-            for (var i = 0; i < Arr.length; i++) {
+            result = Number(Arr[0]);
+            for (var i = 1; i < Arr.length; i++) {
                 result /= Number(Arr[i]);
             }
             return result;
         },
         "*": function (Arr) {
-            result = 1;
-            for (var i = 0; i < Arr.length; i++) {
+            result = Number(Arr[0]);
+            for (var i = 1; i < Arr.length; i++) {
                 result *= Number(Arr[i]);
             }
             return result;
@@ -25,8 +25,8 @@ function Eval(exp) {
             return result;
         },
         "+": function (Arr) {
-            result = 0;
-            for (var i = 0; i < Arr.length; i++) {
+            result = Number(Arr[0]);
+            for (var i = 1; i < Arr.length; i++) {
                 result += Number(Arr[i]);
             }
             return result;
@@ -42,7 +42,7 @@ function Eval(exp) {
                 if (isNaN(fun(tempArr))) {
                     var tempArr2 = new Array();
                     for (var o = 0; o < tempArr.length; o++) {
-                        tempArr2.push(Eval2(tempArr[o]).toString());
+                        tempArr2.push(Eval(tempArr[o]).toString());
                     }
                     return fun(tempArr2);
                 }
