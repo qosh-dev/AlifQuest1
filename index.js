@@ -46,7 +46,7 @@ function calc(){
                 result += btnArr[i].innerHTML;
             }
             answer.innerHTML = result;
-            if(Eval(result) != undefined){
+            if(Eval(result) != undefined && !isNaN(Eval(result)) ){
                 result = Eval(result);
                 answer.innerHTML = result;
             }
